@@ -1,0 +1,85 @@
+/* Effetti di base già presenti */
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.projects h2, footer h2 {
+  color: #00bcd4;
+}
+
+.project {
+  background: #1e1e1e;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00bcd4aa;
+}
+
+.project a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project a:hover {
+  color: #ffffff;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.socials a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #00bcd4;
+}
